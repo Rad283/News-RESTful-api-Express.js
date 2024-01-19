@@ -10,6 +10,14 @@ class NewsController {
     // menampilkan data news
     const news = await News.all();
 
+    if (news.lenght == undefined) {
+      const data = {
+        message: "data news kosong"
+      };
+
+      res.status(404).json(data);
+    }
+
     const data = {
       message: "Menampilkan data news",
       data: news
