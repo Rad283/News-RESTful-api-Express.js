@@ -17,13 +17,15 @@ class NewsController {
 
       res.status(404).json(data);
     }
+    else {
+      const data = {
+        message: "Menampilkan data news",
+        data: news
+      };
 
-    const data = {
-      message: "Menampilkan data news",
-      data: news
-    };
+      res.status(200).json(data);
+    }
 
-    res.status(200).json(data);
   }
 
 
