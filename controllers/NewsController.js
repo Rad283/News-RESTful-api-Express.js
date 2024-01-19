@@ -10,7 +10,7 @@ class NewsController {
     // menampilkan data news
     const news = await News.all();
 
-    if (news.lenght == undefined) {
+    if (news.lenght == 0) {
       const data = {
         message: "data news kosong"
       };
