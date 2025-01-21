@@ -1,6 +1,4 @@
-# Final Project UAS
-
-Building News RESTful API with Express.js
+#Building News RESTful API with Express.js
 
 ## Install dan Jalankan Aplikasi
 
